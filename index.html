@@ -2,13 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Shrimp Fried Rice</title>
+    <style>
+        :root {
+            --primary-bg: #1a1a1a;
+            --text-color: #f4f4f4;
+            --accent-color: #ffcc00;
+            --callout-bg: #333333; 
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: #000;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: Bold;
+            text-transform: uppercase;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .banner-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .pro-tip {
+            background-color: var(--callout-bg);
+            border-left: 10px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        h1, h2 {
+            color: var(--accent-color);
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <p>Home | The Secret | Ingredients | The Wok Flow</p>
+        <a href="#home">Home</a> | <a href="#the-secret">The Secret</a> | <a href="#ingredients">Ingredients</a> | <a href="#the-wok-flow">The Wok Flow</a>
     </nav>
-    <header>
+    <header id="home">
+        <img src="shrimp_fried_rice.jpg" alt="Perfect Shrimp Fried Rice" class="banner-img">
         <h1>The 20-Minute Shrimp Fried Rice</h1>
         <p>A fast, affordable meal solution for college students to save money and eat well with limited resources.</p>
     </header>

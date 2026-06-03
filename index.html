@@ -1,119 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfect Shrimp Fried Rice</title>
-    <style>
-        :root {
-            --primary-bg: #1a1a1a;
-            --text-color: #f4f4f4;
-            --accent-color: #ffcc00;
-            --callout-bg: #333333; 
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfect Shrimp Fried Rice</title>
+        <style>
+            /*color palette and global variables*/
+            :root {
+                --primary-bg: #1a1a1a;
+                --text-color: #f4f4f4;
+                --accent-color: #ffcc00;
+                --callout-bg: #333333; 
+            }
+            /*base page setup*/
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                background-color: var(--primary-bg);
+                color: var(--text-color);
+                margin: 0;
+                padding: 0;
+            }
+            /*sticky navigation bar*/
+            nav {
+                background: #000;
+                padding: 1rem;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                text-align: center;
+            }
 
-        body {
-            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: var(--primary-bg);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-        }
+            nav a {
+                color: var(--accent-color);
+                text-decoration: none;
+                margin: 0 10px;
+                font-weight: Bold;
+                text-transform: uppercase;
+            }
+            /*header and banner styling*/
+            header {
+                text-align: center;
+                padding: 2rem 1rem;
+            }
 
-        nav {
-            background: #000;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            text-align: center;
-        }
+            .banner-img {
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+                border-bottom: 5px solid var(--accent-color);
+            }
+            /*content layout*/
+            section {
+                padding: 2rem;
+                max-width: 800px;
+                margin: auto;
+            }
+            /* highlighted recipe and pro-tip box*/
+            .pro-tip {
+                background-color: var(--callout-bg);
+                border-left: 10px solid var(--accent-color);
+                padding: 1.5rem;
+                margin: 20px 0;
+                font-style: italic;
+            }
+            /* typography colors */
+            h1, h2 {
+                color: var(--accent-color);
+            }
 
-        nav a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: Bold;
-            text-transform: uppercase;
-        }
+            ul, ol {
+                font-size: 1.1rem;
+            }
 
-        header {
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-
-        .banner-img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            border-bottom: 5px solid var(--accent-color);
-        }
-
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .pro-tip {
-            background-color: var(--callout-bg);
-            border-left: 10px solid var(--accent-color);
-            padding: 1.5rem;
-            margin: 20px 0;
-            font-style: italic;
-        }
-
-        h1, h2 {
-            color: var(--accent-color);
-        }
-
-        ul, ol {
-            font-size: 1.1rem;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <a href="#home">Home</a> | <a href="#the-secret">The Secret</a> | <a href="#ingredients">Ingredients</a> | <a href="#the-wok-flow">The Wok Flow</a>
-    </nav>
-    <header id="home">
-        <img src="shrimp_fried_rice.jpg" alt="Perfect Shrimp Fried Rice" class="banner-img">
-        <h1>The 20-Minute Shrimp Fried Rice</h1>
-        <p>A fast, affordable meal solution for college students to save money and eat well with limited resources.</p>
-    </header>
-
-    <section id="the-secret">
-        <h2>The Secret to the Recipe</h2>
-        <p><strong>Pro-Tip:</strong>Use day-old rice! This is the secret to the dish because it ensures the grains stay firm and don't get mushy in the wok.</p>
-    </section>
-
-    <section id="ingredients">
-        <h2>Ingredients</h2>
-        <ul>
-            <li>Cooked shrimp (peeled and deveined)</li>
-            <li>Day-old white rice</li>
-            <li>Frozen peas and carrots</li>
-            <li>Eggs (beaten)</li>
-            <li>Soy sauce and sesame oil</li>
-            <li>Green onions</li>
-        </ul>
-    </section>
-
-    <section id="the-wok-flow">
-        <h2>The Wok Flow</h2>
-        <ol>
-            <li>Heat the wok or large skillet over high heat with a tablespoon of oil.</li>
-            <li>Scramble the eggs quickly and set them aside.</li>
-            <li>Saute the shrimp until pink, then remove.</li>
-            <li>Add the day-old rice and vegetables, breaking up any clumps.</li>
-            <li>Stir in the soy sauce, sesame oil, shrimp, and eggs.</li>
-            <li>Toss everything together until heated through and serve immediately.</li>
-        </ol>
-    </section>
-</body>
+            li {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navigation section -->
+        <nav>
+            <a href="#home">Home</a> | <a href="#the-secret">The Secret</a> | <a href="#ingredients">Ingredients</a> | <a href="#the-wok-flow">The Wok Flow</a>
+        </nav>
+        <!-- header -->
+        <header id="home">
+            <img src="shrimp_fried_rice.jpg" alt="Perfect Shrimp Fried Rice" class="banner-img">
+            <h1>The 20-Minute Shrimp Fried Rice</h1>
+            <p>A fast, affordable meal solution for college students to save money and eat well with limited resources.</p>
+        </header>
+        <!-- secret recipe section -->
+        <section id="the-secret">
+            <h2>The Secret to the Recipe</h2>
+            <div class="pro-tip">
+                <p><strong>Pro-Tip:</strong>Use day-old rice! This is the secret to the dish because it ensures the grains stay firm and don't get mushy in the wok.</p>
+            </div>
+        </section>
+        <!-- ingredients section -->
+        <section id="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 lb. large shrimp, peeled and deveined</li>
+                <li>3 cups of day-old cooked white rice</li>
+                <li>1/2 cup frozen peas and carrots, thawed</li>
+                <li>2 cloves of garlic, minced, and 2 green onions, sliced</li>
+                <li>3 tbsp soy sauce and 1 tbsp toasted sesame oil</li>
+                <li>2 large eggs, lightly beaten, and 2 tbsp vegetable oil for frying</li>
+            </ul>
+        </section>
+        <!-- the wok flow section -->
+        <section id="the-wok-flow">
+            <h2>The Wok Flow</h2>
+            <ol>
+                <li>Heat 1 tablespoon of oil in a large Wok or skillet over high heat until shimmering.</li>
+                <li>Pour in the beaten eggs and scramble quickly; remove from the pan and set aside while still slightly soft.</li>
+                <li>Add the remaining oil to the pan and sear the shrimp 1-2 minutes per side until pink and opaque; remove and set aside.</li>
+                <li>Add the day-old rice to the pan, breaking up any clumps with a spatula until the grains are coated and starting to toast.</li>
+                <li>Stir in the peas, carrots, garlic, and cooked shrimp.</li>
+                <li>Pour the soy sauce and sesame oil over the mixture, tossing constantly for 2 minutes to mimic the fast-paced nature of stir-fry cooking.</li>
+                <li>Fold in the scrambled eggs and sliced green onions, then serve immediately.</li>
+            </ol>
+        </section>
+    </body>
 </html>
